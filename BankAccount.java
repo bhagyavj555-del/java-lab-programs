@@ -5,20 +5,15 @@ class BankAccount {
     long accountNumber;
     String accountHolder;
     double balance;
-
-    // Constructor
     BankAccount(long accNo, String name, double bal) {
         accountNumber = accNo;
         accountHolder = name;
         balance = bal;
     }
-
-    // Deposit method
     void deposit(double amount) {
         balance += amount;
     }
 
-    // Display method
     void displayDetails() {
         System.out.println("\nAccount Details");
         System.out.println("Account Number : " + accountNumber);
@@ -29,10 +24,10 @@ class BankAccount {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Input
+       
         System.out.print("Enter Account Number: ");
         long accNo = sc.nextLong();
-        sc.nextLine(); // clear buffer
+        sc.nextLine();
 
         System.out.print("Enter Account Holder Name: ");
         String name = sc.nextLine();
@@ -43,10 +38,10 @@ class BankAccount {
         System.out.print("Enter Deposit Amount: ");
         double dep = sc.nextDouble();
 
-        // Object creation
+       
         BankAccount b = new BankAccount(accNo, name, bal);
 
-        // Deposit
+      
         b.deposit(dep);
 
         // Output
