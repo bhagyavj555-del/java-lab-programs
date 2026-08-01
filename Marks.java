@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 class Marks {
     int mark1, mark2, mark3;
-
-    // Constructor
     Marks(int m1, int m2, int m3) {
         mark1 = m1;
         mark2 = m2;
