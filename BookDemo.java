@@ -6,15 +6,11 @@ class Book {
     String title;
     String author;
     double price;
-
-    // Constructor
     Book(String title, String author, double price) {
         this.title = title;
         this.author = author;
         this.price = price;
     }
-
-    // Method to display book information
     void display() {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
